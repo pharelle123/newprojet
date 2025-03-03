@@ -12,3 +12,61 @@ header{
     }
 
 }
+.gallery-content{
+    max-width: 90.0rem;
+    margin: 5rem auto 2rem;
+    .gallery-grid{
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 1rem;
+    }
+    .gallery-grid li img{
+        width: 100%;
+        filter: drop-shadow(0 0 0.9rem);
+    }
+    
+}
+picture{
+   width: 50rem;
+    display: flex;
+    margin:auto;
+    justify-content: center;
+    filter: drop-shadow(0 0 00.9rem blue);
+
+    img{
+        width: 100%;
+    }
+}
+article{
+    max-width: 80rem;
+   margin: 0 auto 1rem;
+    h2{
+        width: max-content;
+        padding: .5rem 1rem;
+        background-color: #222;
+        color: #fff;
+    }
+    p{
+        border-top: solid .1rem #222;
+        background-color: #efecef;
+        padding: 1rem;
+        h3 img{
+            filter: invert(100%);
+        }
+    }
+}
+details summary{
+    background-color: #a40909;
+    color: #fff;
+    padding: .5rem 1rem;
+}
+details ul li{
+text-transform: uppercase;
+padding: 1rem;
+background-color: #eee5e5;
+}
+
+details ul li :nth-child(2n+2){
+ background-color: #ccc;
+ padding: 1rem;
+}
