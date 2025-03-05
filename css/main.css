@@ -2,8 +2,12 @@
 
 /* theme */
 header{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    flex-direction: row;
     h1{
-        background-color: #222;
+        background-color: inherit;
         line-height: 6.5rem;
         color: #fff;
         text-align: center;
@@ -66,7 +70,50 @@ padding: 1rem;
 background-color: #eee5e5;
 }
 
-details ul li :nth-child(2n+2){
- background-color: #ccc;
- padding: 1rem;
+footer{
+    text-align: center;
 }
+details ul li:nth-child(2n + 1) {
+    background-color: #a6a4bc;
+    padding: 1rem;
+  }
+
+  details > summary h3::before{
+    content: " +📂 ";
+    color: #fff;
+  }
+  details[open] > summary h3::before{
+    content: " -📁 ";
+  }
+ 
+  header nav ul{
+    display: flex;
+    align-items: center;
+    padding: auto;
+   }
+   header nav ul li *{
+   
+
+    display: block;
+    width: 15rem;
+    text-align: center;
+    line-height: 8.5rem;
+    transition: all .8s ease-in-out;
+
+   }
+header nav ul li a{
+    
+    text-align: center;
+    color: inherit;
+    transform: none;
+    text-transform: uppercase;
+   color: #fff;
+
+   
+}
+ nav ul li:hover a{
+    background-color: #a6a4bc;
+    color: #fff;
+
+}
+  
