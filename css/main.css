@@ -139,9 +139,9 @@ footer * {
       }
       
     }
-    nav{
+  
       /* display: none; */
-    }
+    
     nav ul{
       display: flex;
       align-items: center;
