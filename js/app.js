@@ -1,2 +1,3 @@
-const lang = ["mama", "papa", "true"];
-console.log(lang);
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("chargé");
+});
